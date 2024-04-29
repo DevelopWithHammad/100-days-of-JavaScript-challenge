@@ -70,3 +70,16 @@
 // countChar("MissIssippi", "I")
 
 
+function findTheSidesOfTriangle(a, b, c) {
+    if (a === b && b == c) {
+        return "equilateral"
+    }
+    if (a === b || b == c || a === c) {
+        return "isosceles"
+    }
+    return "scalene"
+}
+
+console.log(findTheSidesOfTriangle(3, 3, 3));
+console.log(findTheSidesOfTriangle(3, 3, 4));
+console.log(findTheSidesOfTriangle(3, 4, 5)); 
